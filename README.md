@@ -4,13 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://medium.com/@krishnajiyedlapalli60/clean-architecture-using-flutter-bloc-43463e9110db
+https://github.com/somnio-software/firebase_auth_bloc_example/blob/main/lib/main.dart
+https://github.com/ishitgami/flutter-bloc-clean-architecture-boilerplate/blob/main/lib/injection.dart
+https://www.figma.com/design/LZAYrfgcZKV667C7I5lwLT/Yummie---Premium-Food-Order-App-UI-Kit?node-id=238-144&t=dk83whaKfukDCcsm-0
