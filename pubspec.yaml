@@ -33,6 +33,8 @@ flutter:
 
   assets:
     - assets/icons/
+    - assets/icons/bb_activated/
+    - assets/icons/bb_unactivated/
     - assets/images/
 
   fonts:

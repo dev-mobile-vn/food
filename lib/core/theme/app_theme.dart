@@ -7,6 +7,7 @@ class AppTheme {
     useMaterial3: true,
     fontFamily: koHoFontFamily,
     primaryColor: kPrimaryColor,
+    colorScheme: ColorScheme.fromSeed(seedColor: kPrimaryColor),
     textTheme: const TextTheme(
         titleSmall: TextStyle(
           fontSize: 14,
