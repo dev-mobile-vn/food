@@ -4,6 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
+https://github.com/chandrabezzo/CountryCodePicker/blob/main/lib/src/country_codes.dart
 https://medium.com/@krishnajiyedlapalli60/clean-architecture-using-flutter-bloc-43463e9110db
 https://github.com/somnio-software/firebase_auth_bloc_example/blob/main/lib/main.dart
 https://github.com/ishitgami/flutter-bloc-clean-architecture-boilerplate/blob/main/lib/injection.dart

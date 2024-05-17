@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:food/features/main/main_screen.dart';
-import 'package:food/features/onboarding/onboarding_screen.dart';
-import 'package:food/features/search_country/search_country_screen.dart';
-import 'package:food/features/splash/bloc/splash_bloc.dart';
-import '../common/contants/routers.dart';
-import '../features/onboarding/bloc/onboarding_bloc.dart';
-import '../features/splash/splash_screen.dart';
+import 'package:food/presentation/main/main_screen.dart';
+
+import '../core/constants/routers.dart';
+import '../presentation/onboarding/intro/bloc/onboarding_bloc.dart';
+import '../presentation/onboarding/intro/intro_screen.dart';
+import '../presentation/onboarding/splash/bloc/splash_bloc.dart';
+import '../presentation/onboarding/splash/splash_screen.dart';
+import '../presentation/search_country/search_country_screen.dart';
 
 class AppRouters {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -23,7 +24,7 @@ class AppRouters {
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
             create: (_) => OnboardingBloc()..add(OnboardingChangeTabEvent(0)),
-            child: const OnBoardingScreen(),
+            child: const IntroScreen(),
           ),
         );
       case searchCountryRoute:

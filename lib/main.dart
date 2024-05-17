@@ -1,15 +1,14 @@
-import 'package:device_preview/device_preview.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:food/common/contants/routers.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food/config/app_routes.dart';
+import 'package:food/config/firebase_config.dart';
+import 'package:food/core/theme/app_theme.dart';
+import 'package:food/presentation/onboarding/login/bloc/login_bloc.dart';
+import 'core/constants/routers.dart';
 
-import 'common/resource/colors.dart';
-
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  //await Firebase.initializeApp();
+  await configFirebase();
   runApp(const MyApp());
   // runApp(DevicePreview(
   //   enabled: !kReleaseMode,
@@ -22,16 +21,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Order Food',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-            seedColor: kPrimaryColor, primary: kPrimaryColor),
-        useMaterial3: true,
-      ),
-      initialRoute: splashRoute,
-      onGenerateRoute: AppRouters.generateRoute,
-    );
+    return MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (_) => LoginBloc(),
+          ),
+        ],
+        child: MaterialApp(
+          title: 'Order Food',
+          debugShowCheckedModeBanner: false,
+          theme: AppTheme.appTheme,
+          initialRoute: splashRoute,
+          onGenerateRoute: AppRouters.generateRoute,
+        ));
   }
 }
