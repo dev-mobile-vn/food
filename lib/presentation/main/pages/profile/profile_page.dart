@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food/core/constants/routers.dart';
 import 'package:food/core/resource/colors.dart';
 import 'package:food/core/resource/fonts.dart';
-import 'package:food/presentation/main/pages/profile/widgets/item_profile.dart';
+import 'widgets/item_profile.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -19,16 +18,11 @@ class ProfilePage extends StatelessWidget {
         centerTitle: true,
         title: const Text(
           'Profile',
-          style: TextStyle(
-            fontFamily: fontKoHoSemiBold,
-            fontSize: 18,
-            color: kBlackColor,
-            fontWeight: FontWeight.bold,
-          ),
         ),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.only(top: 16, bottom: 24),
+        physics: const BouncingScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -134,7 +128,7 @@ class ProfilePage extends StatelessWidget {
                 label: 'Account',
                 ic: 'assets/icons/ic_user.svg',
                 action: () {
-                  //Navigator.pushNamed(context, searchCountryRoute);
+                  Navigator.pushNamed(context, accountRoute);
                 }),
             divider,
             ProfileItem(
@@ -145,7 +139,9 @@ class ProfilePage extends StatelessWidget {
             ProfileItem(
                 label: 'Wishlist',
                 ic: 'assets/icons/ic_heart.svg',
-                action: () {}),
+                action: () {
+                  Navigator.pushNamed(context, wishlistRoute);
+                }),
             divider,
             Padding(
               padding: const EdgeInsets.all(16),

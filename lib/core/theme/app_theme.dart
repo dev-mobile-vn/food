@@ -8,6 +8,20 @@ class AppTheme {
     fontFamily: koHoFontFamily,
     primaryColor: kPrimaryColor,
     colorScheme: ColorScheme.fromSeed(seedColor: kPrimaryColor),
+    cardColor: Colors.white,
+    cardTheme: const CardTheme(
+      color: Colors.white,
+      surfaceTintColor: Colors.white,
+    ),
+    appBarTheme: const AppBarTheme(
+      surfaceTintColor: Colors.white,
+      centerTitle: true,
+      titleTextStyle: TextStyle(
+        fontSize: 18,
+        fontFamily: fontKoHoBold,
+        color: kBlackColor,
+      ),
+    ),
     textTheme: const TextTheme(
         titleSmall: TextStyle(
           fontSize: 14,

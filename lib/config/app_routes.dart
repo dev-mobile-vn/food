@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:food/presentation/main/main_screen.dart';
-
+import 'package:food/presentation/category/categories_page.dart';
 import '../core/constants/routers.dart';
+import '../presentation/account/account_page.dart';
+import '../presentation/main/main_screen.dart';
 import '../presentation/onboarding/intro/bloc/onboarding_bloc.dart';
 import '../presentation/onboarding/intro/intro_screen.dart';
 import '../presentation/onboarding/splash/bloc/splash_bloc.dart';
 import '../presentation/onboarding/splash/splash_screen.dart';
 import '../presentation/search_country/search_country_screen.dart';
+import '../presentation/wishlist/wishlist_page.dart';
 
 class AppRouters {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -31,6 +33,12 @@ class AppRouters {
         return MaterialPageRoute(builder: (_) => const SearchCountryScreen());
       case mainRoute:
         return MaterialPageRoute(builder: (_) => const MainScreen());
+      case wishlistRoute:
+        return MaterialPageRoute(builder: (_) => const WishlistPage());
+      case accountRoute:
+        return MaterialPageRoute(builder: (_) => const AccountPage());
+      case categoryRoute:
+        return MaterialPageRoute(builder: (_) => const CategoriesPage());
       default:
         return _errorRoute();
     }

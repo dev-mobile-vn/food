@@ -6,18 +6,17 @@ class ProfileItem extends StatelessWidget {
   final String ic;
   final VoidCallback action;
 
-  // ProfileItem.account({
-  //   super.key,
-  // })  : label = 'Account',
-  //       ic = 'assets/icons/ic_user.svg',
-  //       action = (() {});
-
-  const ProfileItem(
-      {super.key, required this.label, required this.ic, required this.action});
+  const ProfileItem({
+    super.key,
+    required this.label,
+    required this.ic,
+    required this.action,
+  });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      behavior: HitTestBehavior.translucent,
       onTap: () => action.call(),
       child: Padding(
         padding: const EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
