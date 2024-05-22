@@ -8,6 +8,7 @@ import 'package:food/presentation/main/pages/order/order_page.dart';
 import 'package:food/presentation/main/pages/profile/profile_page.dart';
 import 'package:food/presentation/main/pages/search/search_page.dart';
 import 'package:food/presentation/main/pages/update/update_page.dart';
+import '../../../../core/translations/l10n.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -55,23 +56,23 @@ class _MainScreenState extends State<MainScreen> {
             ),
         items: [
           BottomNavigationBarItem(
-              label: 'Home',
+              label: S.of(context).tb_home,
               icon: SvgPicture.asset(kTabHomeUnActivated),
               activeIcon: SvgPicture.asset(kTabHomeActivated)),
           BottomNavigationBarItem(
-              label: 'Search',
+              label: S.of(context).tb_search,
               icon: SvgPicture.asset(kTabSearchUnActivated),
               activeIcon: SvgPicture.asset(kTabSearchActivated)),
           BottomNavigationBarItem(
-              label: 'Order',
+              label: S.of(context).tb_order,
               icon: SvgPicture.asset(kTabOrderUnActivated),
               activeIcon: SvgPicture.asset(kTabOrderActivated)),
           BottomNavigationBarItem(
-              label: 'Update',
+              label: S.of(context).tb_update,
               icon: SvgPicture.asset(kTabUpdateUnActivated),
               activeIcon: SvgPicture.asset(kTabUpdateActivated)),
           BottomNavigationBarItem(
-              label: 'Profile',
+              label: S.of(context).tb_profile,
               icon: SvgPicture.asset(kTabProfileUnActivated),
               activeIcon: SvgPicture.asset(kTabProfileActivated))
         ],

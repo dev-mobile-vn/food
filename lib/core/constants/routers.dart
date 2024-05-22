@@ -1,7 +1,9 @@
 const String splashRoute = '/';
 const String boardingRoute = '/on-boarding-page';
-const String mainRoute = '/main-screen';
+const String mainRoute = '/main-page';
 const String searchCountryRoute = '/search-country-page';
 const String wishlistRoute = '/wishlist-page';
 const String accountRoute = '/account-page';
 const String categoryRoute = '/category-page';
+const String popularFoodRoute = '/popular-food-page';
+const String nearbyRestaurantRoute = '/nearby-restaurant-page';

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food/core/constants/routers.dart';
 import 'package:food/core/resource/colors.dart';
-import 'package:food/core/resource/fonts.dart';
 import 'widgets/item_profile.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -43,7 +42,7 @@ class ProfilePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Cameron Williamson',
+                        'Truong Pham',
                         style: Theme.of(context)
                             .textTheme
                             .labelLarge!

@@ -1,5 +1,6 @@
-import 'package:food/domain/entities/restaurant_entity.dart';
+import '../../data/models/base_response_model.dart';
+import '../../data/models/restaurant/restaurant_model.dart';
 
 abstract class RestaurantRepository {
-  Future<List<RestaurantEntity>> getAllRestaurant();
+  Future<BaseResponseModel<RestaurantModel>> getRestaurants();
 }

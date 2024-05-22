@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../core/widgets/card_category.dart';
+import '../../core/resource/colors.dart';
+import '../../core/widgets/category_card.dart';
 
 class CategoriesPage extends StatelessWidget {
   const CategoriesPage({super.key});
@@ -8,7 +9,7 @@ class CategoriesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffF6F7F8),
+      backgroundColor: kScafoldGrayColor,
       appBar: AppBar(
         title: const Text('All Category'),
         actions: const [
@@ -32,7 +33,7 @@ class CategoriesPage extends StatelessWidget {
           crossAxisSpacing: 16,
         ),
         itemBuilder: (_, index) {
-          return const CardCategory();
+          return const CategoryCard();
         },
         itemCount: 20,
       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../../../../core/resource/colors.dart';
 import '../../../../core/resource/fonts.dart';
+import '../../../../core/translations/l10n.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
@@ -11,7 +11,7 @@ class SearchPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
       centerTitle: true,
-      title: const Text(
+      title: Text(
         'Search',
       ),
     ));

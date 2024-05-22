@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../../presentation/onboarding/login/login_screen.dart';
 import '../../presentation/onboarding/otp/otp_screen.dart';
-import '../../presentation/onboarding/personal_information/personal_information_screen.dart';
+import '../../presentation/onboarding/pincode/pincode_page.dart';
 
 class DialogUtils {
   static void showModalBottomSheetLogin(BuildContext context) {
@@ -24,18 +23,18 @@ class DialogUtils {
         builder: (_) {
           return OtpScreen(
             onPress: () {
-              showModalBottomSheetPersonalInformation(context);
+              showModalBottomSheetPinCode(context);
             },
           );
         },
         context: context);
   }
 
-  static void showModalBottomSheetPersonalInformation(BuildContext context) {
+  static void showModalBottomSheetPinCode(BuildContext context) {
     showModalBottomSheet(
         isScrollControlled: true,
         builder: (BuildContext context) {
-          return const PersonalInformationScreen();
+          return const PinCodePage();
         },
         context: context);
   }

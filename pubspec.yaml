@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
+  get_it: ^7.7.0
   firebase_core: ^2.31.0
   firebase_auth: ^4.19.5
   flutter_bloc: ^8.1.5
@@ -19,15 +20,29 @@ dependencies:
   loading_animation_widget: ^1.2.1
   device_preview: ^1.1.0
   pin_code_fields: ^8.0.1
+  intl: ^0.18.1
+  dio: ^5.4.3+1
+  json_annotation: ^4.9.0
+  json_serializable: ^6.8.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  build_runner: ^2.4.9
   flutter_lints: ^4.0.0
 
-flutter:
+  flutter_localizations:
+    sdk: flutter
 
+flutter_intl:
+  main_locale: en
+  enabled: true
+  output_dir: lib/core/translations
+  arb_dir: lib/core/translations
+
+
+flutter:
 
   uses-material-design: true
 
@@ -68,5 +83,4 @@ flutter:
         - asset: assets/fonts/KoHo-SemiBoldItalic.ttf
           weight: 600
           style: italic
-
 

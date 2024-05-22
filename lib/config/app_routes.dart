@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food/presentation/category/categories_page.dart';
+import 'package:food/presentation/near_restaurant/near_restaurant_page.dart';
+import 'package:food/presentation/popular_food/popular_food_page.dart';
 import '../core/constants/routers.dart';
 import '../presentation/account/account_page.dart';
 import '../presentation/main/main_screen.dart';
@@ -39,6 +41,10 @@ class AppRouters {
         return MaterialPageRoute(builder: (_) => const AccountPage());
       case categoryRoute:
         return MaterialPageRoute(builder: (_) => const CategoriesPage());
+      case popularFoodRoute:
+        return MaterialPageRoute(builder: (_) => const PopularFoodPage());
+      case nearbyRestaurantRoute:
+        return MaterialPageRoute(builder: (_) => const NearRestaurantPage());
       default:
         return _errorRoute();
     }

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class CardCategory extends StatelessWidget {
-  const CardCategory({super.key});
+class CategoryCard extends StatelessWidget {
+  const CategoryCard({super.key});
 
   @override
   Widget build(BuildContext context) {
