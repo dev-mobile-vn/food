@@ -16,10 +16,11 @@ A new Flutter project.
   <img src="https://github.com/pvtruong2003/food/blob/master/Screenshot_20240522_141812.png" width="250">
   <p/>
 
+<p>
+ https://github.com/chandrabezzo/CountryCodePicker/blob/main/lib/src/country_codes.dart
+ https://medium.com/@krishnajiyedlapalli60/clean-architecture-using-flutter-bloc-43463e9110db
+ https://github.com/somnio-software/firebase_auth_bloc_example/blob/main/lib/main.dart
+ https://github.com/ishitgami/flutter-bloc-clean-architecture-boilerplate/blob/main/lib/injection.dart
+<p>
 
-<p>
-  <a href="https://github.com/chandrabezzo/CountryCodePicker/blob/main/lib/src/country_codes.dart"/>
-  <a href="https://medium.com/@krishnajiyedlapalli60/clean-architecture-using-flutter-bloc-43463e9110db"/>
-  <a href="https://github.com/ishitgami/flutter-bloc-clean-architecture-boilerplate/blob/main/lib/injection.dart"/>
-<p>
 
