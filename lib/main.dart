@@ -1,14 +1,13 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:food/config/app_routes.dart';
-import 'package:food/config/firebase_config.dart';
-import 'package:food/core/theme/app_theme.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';import 'package:food/core/theme/app_theme.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:food/core/translations/l10n.dart';
 import 'package:food/di/injector.dart';
 import 'package:food/presentation/onboarding/login/bloc/login_bloc.dart';
+import 'core/config/app_routes.dart';
+import 'core/config/firebase_config.dart';
 import 'core/constants/routers.dart';
 
 Future<void> main() async {

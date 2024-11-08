@@ -1,9 +1,9 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'base_response_model.g.dart';
+part 'base_response.g.dart';
 
 @JsonSerializable(createToJson: false, genericArgumentFactories: true)
-class BaseResponseModel<T> {
+class BaseResponse<T> {
   final int? page;
   @JsonKey(name: 'results')
   final List<T>? results;
@@ -12,18 +12,18 @@ class BaseResponseModel<T> {
   @JsonKey(name: 'total_results')
   final int? totalResults;
 
-  BaseResponseModel({
+  BaseResponse({
     this.page,
     this.results,
     this.totalPages,
     this.totalResults,
   });
 
-  factory BaseResponseModel.fromJson(
+  factory BaseResponse.fromJson(
     Map<String, dynamic> json,
     T Function(Object? json) fromJsonT,
   ) =>
-      _$BaseResponseModelFromJson(
+      _$BaseResponseFromJson(
         json,
         fromJsonT,
       );

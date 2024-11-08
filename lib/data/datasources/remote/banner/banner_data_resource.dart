@@ -1,6 +1,6 @@
 import '../../../models/banner/banner_model.dart';
-import '../../../models/base_response_model.dart';
+import '../../../models/base_response.dart';
 
 abstract class BannerDataResource {
-  Future<BaseResponseModel<BannerModel>> getBanners();
+  Future<BaseResponse<BannerModel>> getBanners();
 }

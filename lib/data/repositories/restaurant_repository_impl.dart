@@ -1,6 +1,6 @@
 import '../../domain/repositories/restaurant_repository.dart';
 import '../datasources/remote/restaurant/restaurant_data_resource.dart';
-import '../models/base_response_model.dart';
+import '../models/base_response.dart';
 import '../models/restaurant/restaurant_model.dart';
 
 class RestaurantRepositoryImpl extends RestaurantRepository {
@@ -9,7 +9,7 @@ class RestaurantRepositoryImpl extends RestaurantRepository {
   RestaurantRepositoryImpl(this.resource);
 
   @override
-  Future<BaseResponseModel<RestaurantModel>> getRestaurants() {
+  Future<BaseResponse<RestaurantModel>> getRestaurants() {
     return resource.getRestaurants();
   }
 }

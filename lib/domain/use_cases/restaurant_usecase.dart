@@ -1,4 +1,4 @@
-import '../../data/models/base_response_model.dart';
+import '../../data/models/base_response.dart';
 import '../../data/models/restaurant/restaurant_model.dart';
 import '../repositories/restaurant_repository.dart';
 
@@ -7,7 +7,7 @@ class RestaurantUseCase {
 
   RestaurantUseCase(this._repository);
 
-  Future<BaseResponseModel<RestaurantModel>> getRestaurants() async {
+  Future<BaseResponse<RestaurantModel>> getRestaurants() async {
     return _repository.getRestaurants();
   }
 }

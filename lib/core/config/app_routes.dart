@@ -3,15 +3,16 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food/presentation/category/categories_page.dart';
 import 'package:food/presentation/near_restaurant/near_restaurant_page.dart';
 import 'package:food/presentation/popular_food/popular_food_page.dart';
-import '../core/constants/routers.dart';
-import '../presentation/account/account_page.dart';
-import '../presentation/main/main_screen.dart';
-import '../presentation/onboarding/intro/bloc/onboarding_bloc.dart';
-import '../presentation/onboarding/intro/intro_screen.dart';
-import '../presentation/onboarding/splash/bloc/splash_bloc.dart';
-import '../presentation/onboarding/splash/splash_screen.dart';
-import '../presentation/search_country/search_country_screen.dart';
-import '../presentation/wishlist/wishlist_page.dart';
+
+import '../../presentation/account/account_page.dart';
+import '../../presentation/main/main_screen.dart';
+import '../../presentation/onboarding/intro/bloc/onboarding_bloc.dart';
+import '../../presentation/onboarding/intro/intro_screen.dart';
+import '../../presentation/onboarding/splash/bloc/splash_bloc.dart';
+import '../../presentation/onboarding/splash/splash_screen.dart';
+import '../../presentation/search_country/search_country_screen.dart';
+import '../../presentation/wishlist/wishlist_page.dart';
+import '../constants/routers.dart';
 
 class AppRouters {
   static Route<dynamic> generateRoute(RouteSettings settings) {
