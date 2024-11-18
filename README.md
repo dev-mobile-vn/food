@@ -23,4 +23,6 @@ A new Flutter project.
  https://github.com/ishitgami/flutter-bloc-clean-architecture-boilerplate/blob/main/lib/injection.dart
 <p>
 
+flutter packages pub run build_runner build
+
 

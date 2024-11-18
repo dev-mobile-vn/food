@@ -3,6 +3,7 @@ import 'package:food/data/datasources/remote/banner/banner_data_resource.dart';
 import 'package:food/data/datasources/remote/banner/banner_data_resource_impl.dart';
 import 'package:food/data/datasources/remote/category/category_data_resource.dart';
 import 'package:food/data/datasources/remote/category/category_data_resource_impl.dart';
+import 'package:food/data/datasources/remote/user/user_data_source_impl.dart';
 import 'package:food/data/repositories/banner_repo_impl.dart';
 import 'package:food/data/repositories/category_repo_impl.dart';
 import 'package:food/data/repositories/restaurant_repository_impl.dart';
@@ -16,6 +17,7 @@ import 'package:food/presentation/main/pages/home/bloc/home_bloc.dart';
 import 'package:get_it/get_it.dart';
 import '../data/datasources/remote/restaurant/restaurant_data_resource.dart';
 import '../data/datasources/remote/restaurant/restaurant_data_resource_impl.dart';
+import '../data/datasources/remote/user/user_data_source.dart';
 
 final injector = GetIt.instance;
 
@@ -39,5 +41,7 @@ Future<void> init() async {
           injector.get(),
           injector.get(),
           injector.get(),
-        ));
+    ))..registerLazySingleton<UserDataSource>(() => UserDataSourceImpl())
+  ;
+
 }
