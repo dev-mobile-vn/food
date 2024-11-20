@@ -1,6 +1,5 @@
 import 'package:food/core/network/dio_client.dart';
 import 'package:food/data/datasources/remote/banner/banner_data_resource.dart';
-import 'package:food/data/datasources/remote/banner/banner_data_resource_impl.dart';
 import 'package:food/data/datasources/remote/category/category_data_resource.dart';
 import 'package:food/data/datasources/remote/category/category_data_resource_impl.dart';
 import 'package:food/data/repositories/banner_repo_impl.dart';
@@ -27,7 +26,7 @@ Future<void> init() async {
     ..registerLazySingleton<RestaurantRepository>(
         () => RestaurantRepositoryImpl(injector.get()))
     ..registerLazySingleton(() => RestaurantUseCase(injector.get()))
-    ..registerLazySingleton<BannerDataResource>(() => BannerDataResourceImpl())
+    ..registerLazySingleton<BannerDataResource>(() => BannerDataResource())
     ..registerLazySingleton<BannerRepo>(() => BannerRepoImpl(injector.get()))
     ..registerLazySingleton<BannerUseCase>(() => BannerUseCase(injector.get()))
     ..registerLazySingleton<CategoryDataResource>(
