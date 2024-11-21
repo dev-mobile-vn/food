@@ -23,4 +23,8 @@ A new Flutter project.
  https://github.com/ishitgami/flutter-bloc-clean-architecture-boilerplate/blob/main/lib/injection.dart
 <p>
 
+    flutter build apk --release lib/main.dart --flavor dev
+    flutter build appbundle lib/main.dart --flavor dev
+    flutter build appbundle lib/main.dart --flavor prod
+
 
