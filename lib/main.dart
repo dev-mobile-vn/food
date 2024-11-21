@@ -1,11 +1,12 @@
+import 'dart:async';
 import 'dart:developer';
 
 import 'package:device_preview/device_preview.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:food/core/environment/environment.dart';
 import 'package:food/core/theme/app_theme.dart';
 import 'package:food/core/translations/l10n.dart';
 import 'package:food/di/injector.dart';
@@ -16,13 +17,24 @@ import 'core/config/firebase_config.dart';
 import 'core/constants/routers.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await configFirebase();
-  await init();
-  runApp(DevicePreview(
-    enabled: kDebugMode,
-    builder: (context) => const MyApp(), // Wrap your app
-  ));
+  runZonedGuarded(() async {
+    WidgetsFlutterBinding.ensureInitialized();
+
+    await configFirebase();
+
+    FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
+    FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
+
+    await init();
+
+    runApp(DevicePreview(
+      enabled: kDebugMode,
+      builder: (context) => const MyApp(), // Wrap your app
+    ));
+  }, (error, stackTrace) {
+    log(error.toString());
+    FirebaseCrashlytics.instance.recordError(error, stackTrace);
+  });
 }
 
 class MyApp extends StatelessWidget {
