@@ -66,6 +66,8 @@ flutter:
     - assets/icons/bb_activated/
     - assets/icons/bb_unactivated/
     - assets/images/
+    - assets/images/
+    - assets/country/countries.json
 
   fonts:
     - family: koHo_regular

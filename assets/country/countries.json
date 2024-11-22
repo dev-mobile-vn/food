@@ -1,0 +1,436 @@
+{
+  "countries": [
+    {
+      "name": "Việt Nam",
+      "code": "VN",
+      "phone_code": "84",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/vn.png",
+        "svg": "https://flagcdn.com/vn.svg"
+      }
+    },
+    {
+      "name": "Thailand",
+      "code": "TH",
+      "phone_code": "66",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/th.png",
+        "svg": "https://flagcdn.com/th.svg"
+      }
+    },
+    {
+      "name": "Singapore",
+      "code": "SG",
+      "phone_code": "65",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/sg.png",
+        "svg": "https://flagcdn.com/sg.svg"
+      }
+    },
+    {
+      "name": "Malaysia",
+      "code": "MY",
+      "phone_code": "60",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/my.png",
+        "svg": "https://flagcdn.com/my.svg"
+      }
+    },
+    {
+      "name": "Indonesia",
+      "code": "ID",
+      "phone_code": "62",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/id.png",
+        "svg": "https://flagcdn.com/id.svg"
+      }
+    },
+    {
+      "name": "Philippines",
+      "code": "PH",
+      "phone_code": "63",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/ph.png",
+        "svg": "https://flagcdn.com/ph.svg"
+      }
+    },
+    {
+      "name": "Japan",
+      "code": "JP",
+      "phone_code": "81",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/jp.png",
+        "svg": "https://flagcdn.com/jp.svg"
+      }
+    },
+    {
+      "name": "South Korea",
+      "code": "KR",
+      "phone_code": "82",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/kr.png",
+        "svg": "https://flagcdn.com/kr.svg"
+      }
+    },
+    {
+      "name": "China",
+      "code": "CN",
+      "phone_code": "86",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/cn.png",
+        "svg": "https://flagcdn.com/cn.svg"
+      }
+    },
+    {
+      "name": "United States",
+      "code": "US",
+      "phone_code": "1",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/us.png",
+        "svg": "https://flagcdn.com/us.svg"
+      }
+    },
+    {
+      "name": "United Kingdom",
+      "code": "GB",
+      "phone_code": "44",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/gb.png",
+        "svg": "https://flagcdn.com/gb.svg"
+      }
+    },
+    {
+      "name": "France",
+      "code": "FR",
+      "phone_code": "33",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/fr.png",
+        "svg": "https://flagcdn.com/fr.svg"
+      }
+    },
+    {
+      "name": "Germany",
+      "code": "DE",
+      "phone_code": "49",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/de.png",
+        "svg": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "name": "Italy",
+      "code": "IT",
+      "phone_code": "39",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/it.png",
+        "svg": "https://flagcdn.com/it.svg"
+      }
+    },
+    {
+      "name": "Spain",
+      "code": "ES",
+      "phone_code": "34",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/es.png",
+        "svg": "https://flagcdn.com/es.svg"
+      }
+    },
+    {
+      "name": "Russia",
+      "code": "RU",
+      "phone_code": "7",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/ru.png",
+        "svg": "https://flagcdn.com/ru.svg"
+      }
+    },
+    {
+      "name": "Australia",
+      "code": "AU",
+      "phone_code": "61",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/au.png",
+        "svg": "https://flagcdn.com/au.svg"
+      }
+    },
+    {
+      "name": "Brazil",
+      "code": "BR",
+      "phone_code": "55",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/br.png",
+        "svg": "https://flagcdn.com/br.svg"
+      }
+    },
+    {
+      "name": "Canada",
+      "code": "CA",
+      "phone_code": "1",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/ca.png",
+        "svg": "https://flagcdn.com/ca.svg"
+      }
+    },
+    {
+      "name": "India",
+      "code": "IN",
+      "phone_code": "91",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/in.png",
+        "svg": "https://flagcdn.com/in.svg"
+      }
+    },
+    {
+      "name": "Mexico",
+      "code": "MX",
+      "phone_code": "52",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/mx.png",
+        "svg": "https://flagcdn.com/mx.svg"
+      }
+    },
+    {
+      "name": "Argentina",
+      "code": "AR",
+      "phone_code": "54",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/ar.png",
+        "svg": "https://flagcdn.com/ar.svg"
+      }
+    },
+    {
+      "name": "South Africa",
+      "code": "ZA",
+      "phone_code": "27",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/za.png",
+        "svg": "https://flagcdn.com/za.svg"
+      }
+    },
+    {
+      "name": "Egypt",
+      "code": "EG",
+      "phone_code": "20",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/eg.png",
+        "svg": "https://flagcdn.com/eg.svg"
+      }
+    },
+    {
+      "name": "Turkey",
+      "code": "TR",
+      "phone_code": "90",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/tr.png",
+        "svg": "https://flagcdn.com/tr.svg"
+      }
+    },
+    {
+      "name": "Saudi Arabia",
+      "code": "SA",
+      "phone_code": "966",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/sa.png",
+        "svg": "https://flagcdn.com/sa.svg"
+      }
+    },
+    {
+      "name": "UAE",
+      "code": "AE",
+      "phone_code": "971",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/ae.png",
+        "svg": "https://flagcdn.com/ae.svg"
+      }
+    },
+    {
+      "name": "Israel",
+      "code": "IL",
+      "phone_code": "972",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/il.png",
+        "svg": "https://flagcdn.com/il.svg"
+      }
+    },
+    {
+      "name": "Pakistan",
+      "code": "PK",
+      "phone_code": "92",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/pk.png",
+        "svg": "https://flagcdn.com/pk.svg"
+      }
+    },
+    {
+      "name": "Bangladesh",
+      "code": "BD",
+      "phone_code": "880",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/bd.png",
+        "svg": "https://flagcdn.com/bd.svg"
+      }
+    },
+    {
+      "name": "New Zealand",
+      "code": "NZ",
+      "phone_code": "64",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/nz.png",
+        "svg": "https://flagcdn.com/nz.svg"
+      }
+    },
+    {
+      "name": "Greece",
+      "code": "GR",
+      "phone_code": "30",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/gr.png",
+        "svg": "https://flagcdn.com/gr.svg"
+      }
+    },
+    {
+      "name": "Portugal",
+      "code": "PT",
+      "phone_code": "351",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/pt.png",
+        "svg": "https://flagcdn.com/pt.svg"
+      }
+    },
+    {
+      "name": "Ireland",
+      "code": "IE",
+      "phone_code": "353",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/ie.png",
+        "svg": "https://flagcdn.com/ie.svg"
+      }
+    },
+    {
+      "name": "Sweden",
+      "code": "SE",
+      "phone_code": "46",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/se.png",
+        "svg": "https://flagcdn.com/se.svg"
+      }
+    },
+    {
+      "name": "Norway",
+      "code": "NO",
+      "phone_code": "47",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/no.png",
+        "svg": "https://flagcdn.com/no.svg"
+      }
+    },
+    {
+      "name": "Finland",
+      "code": "FI",
+      "phone_code": "358",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/fi.png",
+        "svg": "https://flagcdn.com/fi.svg"
+      }
+    },
+    {
+      "name": "Denmark",
+      "code": "DK",
+      "phone_code": "45",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/dk.png",
+        "svg": "https://flagcdn.com/dk.svg"
+      }
+    },
+    {
+      "name": "Poland",
+      "code": "PL",
+      "phone_code": "48",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/pl.png",
+        "svg": "https://flagcdn.com/pl.svg"
+      }
+    },
+    {
+      "name": "Austria",
+      "code": "AT",
+      "phone_code": "43",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/at.png",
+        "svg": "https://flagcdn.com/at.svg"
+      }
+    },
+    {
+      "name": "Switzerland",
+      "code": "CH",
+      "phone_code": "41",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/ch.png",
+        "svg": "https://flagcdn.com/ch.svg"
+      }
+    },
+    {
+      "name": "Netherlands",
+      "code": "NL",
+      "phone_code": "31",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/nl.png",
+        "svg": "https://flagcdn.com/nl.svg"
+      }
+    },
+    {
+      "name": "Belgium",
+      "code": "BE",
+      "phone_code": "32",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/be.png",
+        "svg": "https://flagcdn.com/be.svg"
+      }
+    },
+    {
+      "name": "Taiwan",
+      "code": "TW",
+      "phone_code": "886",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/tw.png",
+        "svg": "https://flagcdn.com/tw.svg"
+      }
+    },
+    {
+      "name": "Hong Kong",
+      "code": "HK",
+      "phone_code": "852",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/hk.png",
+        "svg": "https://flagcdn.com/hk.svg"
+      }
+    },
+    {
+      "name": "Macau",
+      "code": "MO",
+      "phone_code": "853",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/mo.png",
+        "svg": "https://flagcdn.com/mo.svg"
+      }
+    },
+    {
+      "name": "Cambodia",
+      "code": "KH",
+      "phone_code": "855",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/kh.png",
+        "svg": "https://flagcdn.com/kh.svg"
+      }
+    },
+    {
+      "name": "Laos",
+      "code": "LA",
+      "phone_code": "856",
+      "flag_urls": {
+        "png": "https://flagcdn.com/w320/la.png",
+        "svg": "https://flagcdn.com/la.svg"
+      }
+    }
+  ]
+}
