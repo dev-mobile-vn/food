@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  #flutter_native_splash: ^2.4.3
   cupertino_icons: ^1.0.8
   get_it: ^8.0.2
   firebase_core: ^3.8.0
@@ -25,6 +26,7 @@ dependencies:
   dio: ^5.7.0
   json_annotation: ^4.9.0
   json_serializable: ^6.8.0
+  freezed_annotation: ^2.4.4
 
 
 dev_dependencies:
@@ -36,6 +38,7 @@ dev_dependencies:
 
   flutter_localizations:
     sdk: flutter
+  freezed: ^2.5.7
 
 flutter_intl:
   main_locale: en
@@ -43,6 +46,16 @@ flutter_intl:
   output_dir: lib/core/translations
   arb_dir: lib/core/translations
 
+
+#flutter_native_splash:
+#  color: "#ffffff"
+#  image: "assets/images/logo_splash.png"
+
+#flutter_icons:
+#  android: true
+#  ios: true
+#  remove_alpha_ios: true
+#  image_path: "assets/images/logo_splash.png"
 
 flutter:
 

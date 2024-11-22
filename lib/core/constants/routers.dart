@@ -7,3 +7,4 @@ const String accountRoute = '/account-page';
 const String categoryRoute = '/category-page';
 const String popularFoodRoute = '/popular-food-page';
 const String nearbyRestaurantRoute = '/nearby-restaurant-page';
+const String changeLanguage = '/change-language-page';

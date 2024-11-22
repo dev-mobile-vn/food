@@ -8,7 +8,7 @@ class RestaurantDataResourceImpl extends RestaurantDataResource {
   @override
   Future<BaseResponse<RestaurantModel>> getRestaurants() async {
     try {
-      final response = await injector.get<DioClient>().get("restaurants");
+      final response = await getIt.get<DioClient>().get("restaurants");
       return BaseResponse.fromJson(
         response.data,
         (json) => RestaurantModel.fromJson(json as Map<String, dynamic>),

@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food/presentation/category/categories_page.dart';
 import 'package:food/presentation/near_restaurant/near_restaurant_page.dart';
 import 'package:food/presentation/popular_food/popular_food_page.dart';
+import 'package:food/presentation/settings/language/change_language_page.dart';
 
 import '../../presentation/account/account_page.dart';
 import '../../presentation/main/main_screen.dart';
@@ -46,6 +47,8 @@ class AppRouters {
         return MaterialPageRoute(builder: (_) => const PopularFoodPage());
       case nearbyRestaurantRoute:
         return MaterialPageRoute(builder: (_) => const NearRestaurantPage());
+      case changeLanguage:
+        return MaterialPageRoute(builder: (_) => const ChangeLanguagePage());
       default:
         return _errorRoute();
     }

@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage>
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (_) => injector.get<HomeBloc>()
+          create: (_) => getIt.get<HomeBloc>()
             ..add(GetRestaurantsEvent())
             ..add(GetBannersEvent())
             ..add(GetCategoriesEvent()),

@@ -8,7 +8,7 @@ class CategoryDataResourceImpl extends CategoryDataResource {
   @override
   Future<BaseResponse<CategoryModel>> getCategories() async {
     try {
-      final response = await injector.get<DioClient>().get('categories');
+      final response = await getIt.get<DioClient>().get('categories');
       return BaseResponse.fromJson(
         response.data,
         (json) => CategoryModel.fromJson(json as Map<String, dynamic>),

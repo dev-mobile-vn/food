@@ -22,10 +22,39 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "tb_home": MessageLookupByLibrary.simpleMessage("Trang chủ"),
-        "tb_order": MessageLookupByLibrary.simpleMessage("Đặt hàng"),
-        "tb_profile": MessageLookupByLibrary.simpleMessage("Cá nhân"),
-        "tb_search": MessageLookupByLibrary.simpleMessage("Tìm kiếm"),
-        "tb_update": MessageLookupByLibrary.simpleMessage("Cập nhật")
+        "btn_login": MessageLookupByLibrary.simpleMessage("Login"),
+        "content_fast_delivery": MessageLookupByLibrary.simpleMessage(
+            "Experience lightning-fast delivery service that brings your favorite items right to your doorstep. Our dedicated team ensures your packages arrive safely and on time, every time."),
+        "content_order_food_round_you": MessageLookupByLibrary.simpleMessage(
+            "Explore a diverse culinary world right around you with Order Food Around You app. We connect you with thousands of local restaurants and eateries to bring you the ultimate dining experience."),
+        "content_save_delivery": MessageLookupByLibrary.simpleMessage(
+            "Putting safety first with our reliable delivery service. We are committed to protecting your order from pickup to delivery, ensuring the most complete shopping experience."),
+        "fast_delivery": MessageLookupByLibrary.simpleMessage("Fast Delivery"),
+        "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+        "item_account": MessageLookupByLibrary.simpleMessage("Account"),
+        "item_general": MessageLookupByLibrary.simpleMessage("General"),
+        "item_help_support":
+            MessageLookupByLibrary.simpleMessage("Help & Support"),
+        "item_logout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "item_personal": MessageLookupByLibrary.simpleMessage("Personal"),
+        "item_privacy_policy":
+            MessageLookupByLibrary.simpleMessage("Privacy & Policy"),
+        "item_saved_payment":
+            MessageLookupByLibrary.simpleMessage("Saved Payment"),
+        "item_term_condition":
+            MessageLookupByLibrary.simpleMessage("Term & Condition"),
+        "item_wishlist": MessageLookupByLibrary.simpleMessage("Wishlist"),
+        "order_food_round_you":
+            MessageLookupByLibrary.simpleMessage("Order Food Around You"),
+        "save_delivery": MessageLookupByLibrary.simpleMessage("Save Delivery"),
+        "tb_home": MessageLookupByLibrary.simpleMessage("Home"),
+        "tb_order": MessageLookupByLibrary.simpleMessage("Order"),
+        "tb_profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "tb_search": MessageLookupByLibrary.simpleMessage("Search"),
+        "tb_update": MessageLookupByLibrary.simpleMessage("Notification"),
+        "title_change_language":
+            MessageLookupByLibrary.simpleMessage("Change language"),
+        "txt_agree_with_terms_and_privacy": MessageLookupByLibrary.simpleMessage(
+            "By using our mobile app, you agree to our Terms of Use and Privacy Policy")
       };
 }

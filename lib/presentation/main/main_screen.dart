@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food/core/extensions/x_translations.dart';
 import 'package:food/core/resource/colors.dart';
 import 'package:food/core/resource/fonts.dart';
 import 'package:food/core/resource/icons.dart';
@@ -8,7 +9,6 @@ import 'package:food/presentation/main/pages/order/order_page.dart';
 import 'package:food/presentation/main/pages/profile/profile_page.dart';
 import 'package:food/presentation/main/pages/search/search_page.dart';
 import 'package:food/presentation/main/pages/update/update_page.dart';
-import '../../../../core/translations/l10n.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -56,23 +56,23 @@ class _MainScreenState extends State<MainScreen> {
             ),
         items: [
           BottomNavigationBarItem(
-              label: S.of(context).tb_home,
+              label: context.s.tb_home,
               icon: SvgPicture.asset(kTabHomeUnActivated),
               activeIcon: SvgPicture.asset(kTabHomeActivated)),
           BottomNavigationBarItem(
-              label: S.of(context).tb_search,
+              label: context.s.tb_search,
               icon: SvgPicture.asset(kTabSearchUnActivated),
               activeIcon: SvgPicture.asset(kTabSearchActivated)),
           BottomNavigationBarItem(
-              label: S.of(context).tb_order,
+              label: context.s.tb_order,
               icon: SvgPicture.asset(kTabOrderUnActivated),
               activeIcon: SvgPicture.asset(kTabOrderActivated)),
           BottomNavigationBarItem(
-              label: S.of(context).tb_update,
+              label: context.s.tb_update,
               icon: SvgPicture.asset(kTabUpdateUnActivated),
               activeIcon: SvgPicture.asset(kTabUpdateActivated)),
           BottomNavigationBarItem(
-              label: S.of(context).tb_profile,
+              label: context.s.tb_profile,
               icon: SvgPicture.asset(kTabProfileUnActivated),
               activeIcon: SvgPicture.asset(kTabProfileActivated))
         ],

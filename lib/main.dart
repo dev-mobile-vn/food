@@ -11,7 +11,7 @@ import 'package:food/core/theme/app_theme.dart';
 import 'package:food/core/translations/l10n.dart';
 import 'package:food/di/injector.dart';
 import 'package:food/presentation/onboarding/login/bloc/login_bloc.dart';
-
+import 'core/app/app_cubit.dart';
 import 'core/config/app_routes.dart';
 import 'core/config/firebase_config.dart';
 import 'core/constants/routers.dart';
@@ -28,8 +28,15 @@ Future<void> main() async {
     await init();
 
     runApp(DevicePreview(
-      enabled: kDebugMode,
-      builder: (context) => const MyApp(), // Wrap your app
+      enabled: !kDebugMode,
+      builder: (context) => MultiBlocProvider(providers: [
+        BlocProvider(
+          create: (_) => getIt.get<AppCubit>(),
+        ),
+        BlocProvider(
+          create: (_) => LoginBloc(),
+        ),
+      ], child: const MyApp()),
     ));
   }, (error, stackTrace) {
     log(error.toString());
@@ -37,24 +44,31 @@ Future<void> main() async {
   });
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  void initState() {
+    super.initState();
+    getIt.get<AppCubit>().getLocale();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-        providers: [
-          BlocProvider(
-            create: (_) => LoginBloc(),
-          ),
-        ],
-        child: MaterialApp(
+    return BlocBuilder<AppCubit, AppState>(
+      builder: (context, state) {
+        return MaterialApp(
           title: 'Order Food',
           debugShowCheckedModeBanner: false,
           theme: AppTheme.appTheme,
           initialRoute: splashRoute,
           onGenerateRoute: AppRouters.generateRoute,
-          locale: const Locale("en"),
+          locale: state.locale,
           localizationsDelegates: const [
             S.delegate,
             GlobalMaterialLocalizations.delegate,
@@ -65,6 +79,8 @@ class MyApp extends StatelessWidget {
             Locale("vi"),
             Locale("en"),
           ],
-        ));
+        );
+      },
+    );
   }
 }

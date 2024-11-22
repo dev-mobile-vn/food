@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:food/core/extensions/x_translations.dart';
 import 'package:food/presentation/onboarding/intro/widgets/item_slider.dart';
 
 import '../../../core/constants/routers.dart';
@@ -38,27 +39,25 @@ class IntroScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       SizedBox(
-                        height: 300,
+                        height: 400,
                         child: PageView(
                           onPageChanged: (index) => context
                               .read<OnboardingBloc>()
                               .add(OnboardingChangeTabEvent(index)),
-                          children: const [
+                          children: [
                             ItemSlider(
-                                ic: imgOnBoardingFirst,
-                                title: 'Order Food Around You',
-                                content:
-                                    'The best movie streaming app of the century to make your days great!'),
+                              ic: imgOnBoardingFirst,
+                              title: context.s.order_food_round_you,
+                              content: context.s.content_order_food_round_you,
+                            ),
                             ItemSlider(
                                 ic: imgOnBoardingSecond,
-                                title: 'Fast Delivery',
-                                content:
-                                    'The best movie streaming app of the century to make your days great!'),
+                                title: context.s.fast_delivery,
+                                content: context.s.content_fast_delivery),
                             ItemSlider(
                                 ic: imgOnBoardingThird,
-                                title: 'Save Delivery',
-                                content:
-                                    'The best movie streaming app of the century to make your days great!'),
+                                title: context.s.save_delivery,
+                                content: context.s.content_save_delivery),
                           ],
                         ),
                       ),
@@ -104,8 +103,8 @@ class IntroScreen extends StatelessWidget {
                         height: 52,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8)),
-                        child: const Text(
-                          'Get Started',
+                        child: Text(
+                          context.s.getStarted,
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
@@ -124,16 +123,16 @@ class IntroScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(8),
                             side: const BorderSide(
                                 color: kPrimaryColor, width: 1)),
-                        child: const Text(
-                          'Login',
+                        child: Text(
+                          context.s.btn_login,
                           style: TextStyle(color: kPrimaryColor),
                         ),
                       ),
                       const SizedBox(
                         height: 20,
                       ),
-                      const Text(
-                        'By using our mobile app, you agree to our Terms of Use and Privacy Policy',
+                      Text(
+                        context.s.txt_agree_with_terms_and_privacy,
                         textAlign: TextAlign.center,
                         style: TextStyle(color: kBlackColor),
                       )

@@ -6,7 +6,7 @@ import '../../../models/base_response.dart';
  class BannerDataResource {
    Future<BaseResponse<BannerModel>> getBanners() async {
      try {
-       final res = await injector.get<DioClient>().get('banners');
+       final res = await getIt.get<DioClient>().get('banners');
        return BaseResponse.fromJson(
          res.data,
              (json) => BannerModel.fromJson(json as Map<String, dynamic>),

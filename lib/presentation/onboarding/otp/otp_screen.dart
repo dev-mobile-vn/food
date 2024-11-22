@@ -58,7 +58,7 @@ class _OtpScreenState extends State<OtpScreen> {
                     const SizedBox(
                       height: 8,
                     ),
-                    const Text('Input a 7 digit code we’ve just sent to',
+                    const Text('Input a 6 digit code we’ve just sent to',
                         style: TextStyle(
                           color: kBlackColor,
                           fontWeight: FontWeight.normal,
