@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:developer';
-
 import 'package:device_preview/device_preview.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
@@ -15,6 +14,7 @@ import 'core/app/app_cubit.dart';
 import 'core/config/app_routes.dart';
 import 'core/config/firebase_config.dart';
 import 'core/constants/routers.dart';
+import 'core/widgets/custom_error_widget.dart';
 
 Future<void> main() async {
   runZonedGuarded(() async {
@@ -69,6 +69,12 @@ class _MyAppState extends State<MyApp> {
           initialRoute: splashRoute,
           onGenerateRoute: AppRouters.generateRoute,
           locale: state.locale,
+          builder: (context, child) {
+            ErrorWidget.builder = (errorDetails) {
+              return const CustomErrorWidget();
+            };
+            return child!;
+          },
           localizationsDelegates: const [
             S.delegate,
             GlobalMaterialLocalizations.delegate,
