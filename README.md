@@ -21,6 +21,7 @@ A new Flutter project.
  https://medium.com/@krishnajiyedlapalli60/clean-architecture-using-flutter-bloc-43463e9110db
  https://github.com/somnio-software/firebase_auth_bloc_example/blob/main/lib/main.dart
  https://github.com/ishitgami/flutter-bloc-clean-architecture-boilerplate/blob/main/lib/injection.dart
+ https://dev.to/danielgomezrico/using-types-to-improve-separation-of-concerns-and-unit-test-easily-on-flutter-any-typed-language-fim
 <p>
 
 
